@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet , BrowserRouter} from "react-router-dom";
 
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
@@ -9,6 +9,7 @@ import About from "./About.jsx";
 import Project from "./Project.jsx";
 import Contact from "./Contact.jsx";
 import "./index.css";
+import ScrollToTop from "./ScrolltoTop.jsx";
 
 function Layout() {
   return (
@@ -24,6 +25,8 @@ function Layout() {
 
 export default function App() {
   return (
+<BrowserRouter>
+<ScrollToTop/>
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
@@ -32,5 +35,7 @@ export default function App() {
         <Route path="/Contact" element={<Contact />} />
       </Route>
     </Routes>
+
+</BrowserRouter>
   );
 }
