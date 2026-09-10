@@ -27,7 +27,7 @@ const TECH_STACK = [
   { name: "Git", icon: GitBranch, color: "text-red-500", bg: "bg-red-50" },
   { name: "GitHub", icon: FaGithub, color: "text-slate-800", bg: "bg-slate-100" },
   { name: "Figma", icon: PenTool, color: "text-purple-500", bg: "bg-purple-50" },
-  { name: "UI/UX Design", icon: Layout, color: "text-indigo-500", bg: "bg-indigo-50" },
+  { name: "UI/UX", icon: Layout, color: "text-indigo-500", bg: "bg-indigo-50" },
 ];
 
 const PROJECTS = [
